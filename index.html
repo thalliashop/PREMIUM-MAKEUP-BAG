@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Makeup Bag - Tas Kosmetik Mewah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .promo-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .product-detail-img {
+            transition: all 0.3s ease;
+        }
+        
+        .product-detail-img:hover {
+            transform: scale(1.03);
+        }
+        
+        .color-variant {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .color-variant:hover, .color-variant.active {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+        
+        .form-container {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="gradient-bg text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center items-center">
+                <div class="text-2xl font-bold tracking-wider">DISKON KHUSU HARI INI</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="w-full">
+        <img src="https://cdn.techcloudly.com/image/ce94d529d9b0d166044545ea43f62b313ed01998-600.jpeg" 
+             alt="Premium Makeup Bag" 
+             class="w-full h-auto object-cover">
+    </section>
+
+    <!-- Product Title & Description -->
+    <section id="product" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">PREMIUM MAKEUP BAG</h1>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    Dengan desain minimalis dan efisien serta warna yang sesuai dengan gaya hidup Anda, 
+                    semua barang Anda tetap terorganisir, terpisah, dan mudah diambil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="features" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Keunggulan Produk</h2>
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <p class="text-lg text-gray-700 mb-6">
+                        Tas kokoh ini terbuat dari kulit dan bahan premium dengan kantong penyimpanan untuk membantu membersihkan kekacauan dan menata semua produk kecantikan Anda dengan mudah.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check-circle text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Material Premium</h3>
+                                <p class="text-gray-600">Terbuat dari kulit asli dan bahan berkualitas tinggi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-th-large text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Banyak Kompartemen</h3>
+                                <p class="text-gray-600">Memiliki banyak kantong untuk organisasi yang rapi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Durable</h3>
+                                <p class="text-gray-600">Kokoh dan tahan lama untuk penggunaan jangka panjang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Detail Produk</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="product-detail-img overflow-hidden rounded-xl">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7reoq-m2vure86rdnl26.webp" 
+                         alt="Detail Produk 1" 
+                         class="w-full h-auto rounded-xl">
+                    <p class="mt-4 text-gray-700 text-center">Desain minimalis dengan banyak kompartemen</p>
+                </div>
+                <div class="product-detail-img overflow-hidden rounded-xl">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rent-m2vurek4bbdzd2.webp" 
+                         alt="Detail Produk 2" 
+                         class="w-full h-auto rounded-xl">
+                    <p class="mt-4 text-gray-700 text-center">Bahan premium yang kuat dan tahan lama</p>
+                </div>
+                <div class="product-detail-img overflow-hidden rounded-xl">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7reqa-m2vurepy1ds628.webp" 
+                         alt="Detail Produk 3" 
+                         class="w-full h-auto rounded-xl">
+                    <p class="mt-4 text-gray-700 text-center">Ukuran ideal untuk semua kebutuhan makeup Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Pilihan Warna</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="color-variant rounded-lg overflow-hidden active">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lyvokte7dsg5af@resize_w900_nl.webp" 
+                         alt="Warna Hitam" 
+                         class="w-full h-auto">
+                </div>
+                <div class="color-variant rounded-lg overflow-hidden">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lyvokte7f70l0b@resize_w900_nl.webp" 
+                         alt="Warna Coklat" 
+                         class="w-full h-auto">
+                </div>
+                <div class="color-variant rounded-lg overflow-hidden">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lyvokte7gll129@resize_w900_nl.webp" 
+                         alt="Warna Merah Maroon" 
+                         class="w-full h-auto">
+                </div>
+                <div class="color-variant rounded-lg overflow-hidden">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lyvpa74zx04b8a@resize_w900_nl.webp" 
+                         alt="Warna Biru Navy" 
+                         class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Apa Kata Pelanggan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Sarah Wijaya</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Tas makeup ini benar-benar mengubah cara saya menyimpan kosmetik. Desainnya sangat fungsional dan bahan yang digunakan premium. Worth it banget untuk harganya!"
+                    </p>
+                </div>
+                <div class="testimonial-card bg-white rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Dian Permata</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Saya sudah mencoba banyak tas makeup, tapi yang ini benar-benar berbeda. Kualitasnya premium dan ukurannya pas untuk semua koleksi makeup saya. Pengiriman juga cepat!"
+                    </p>
+                </div>
+                <div class="testimonial-card bg-white rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Rina Anggraeni</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Sebagai makeup artist, saya butuh tas yang bisa menampung banyak produk tapi tetap rapi. Tas ini jawabannya! Sekarang semua klien saya bertanya di mana saya membelinya."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Countdown -->
+    <section class="py-12 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">PROMO SPESIAL HARI INI!</h2>
+                <p class="text-lg mb-8">Diskon besar-besaran hanya berlaku hingga:</p>
+                
+                <div class="grid grid-cols-4 gap-4 max-w-md mx-auto mb-8">
+                    <div class="countdown-box rounded-lg p-4">
+                        <div class="text-3xl font-bold" id="countdown-days">00</div>
+                        <div class="text-sm">Hari</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4">
+                        <div class="text-3xl font-bold" id="countdown-hours">00</div>
+                        <div class="text-sm">Jam</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4">
+                        <div class="text-3xl font-bold" id="countdown-minutes">00</div>
+                        <div class="text-sm">Menit</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4">
+                        <div class="text-3xl font-bold" id="countdown-seconds">00</div>
+                        <div class="text-sm">Detik</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4 max-w-md mx-auto">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-truck text-blue-600 mr-2"></i> Pengiriman 2 - 4 Hari Setelah Pemesanan
+                    </p>
+                    <p class="text-gray-800 font-semibold mb-2">
+                        <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> Mohon Isi Alamat Dengan Lengkap
+                    </p>
+                    <p class="text-gray-800 font-semibold">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i> 100% Product Original
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price & Order Section -->
+    <section id="order" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <!-- Price Info -->
+                    <div class="md:w-1/2">
+                        <div class="bg-blue-50 rounded-xl p-6 h-full">
+                            <div class="promo-badge bg-red-500 text-white text-sm font-bold px-4 py-1 rounded-full inline-block mb-4">
+                                PROMO SPESIAL HARI INI
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:
+                            </p>
+                            
+                            <div class="mb-6">
+                                <div class="text-4xl font-bold text-blue-600 mb-1">Rp 177.000</div>
+                                <div class="text-xl text-gray-500 line-through">Rp 287.000</div>
+                                <div class="text-green-600 font-semibold mt-2">
+                                    <i class="fas fa-wallet mr-2"></i> Anda Hemat Rp 110.000 (38%)
+                                </div>
+                            </div>
+                            
+                            
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-lyvokte79kqt31.webp" 
+                                 alt="Promo Diskon" 
+                                 class="w-full rounded-lg">
+                        </div>
+                    </div>
+                    
+                    <!-- Order Form -->
+                    <div class="md:w-1/2">
+                        <div class="form-container bg-white rounded-xl p-6 border border-gray-200">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">FORM PEMESANAN</h2>
+                            
+                            <!-- OrderOnline Embed Code -->
+                            <div class="ooef">
+                                <form class="orderonline-embed-form" data-username="vita" data-product-slug="premium-makeup-bag" data-product-id="6863ce2565b93e375d06732d" id="oo-embed-form-premium-makeup-bag-1253" data-origin="orderonline">
+                                    <div class="ooef-loader">
+                                        <style>
+                                            .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                            @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                            @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                            .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                            .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                            .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                            @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                            @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                        </style>
+                                        <div aria-live="polite" role="status">
+                                            <div>Loading...</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                if (typeof xLogError != 'function') {
+                                    var xLogError = function (error) {
+                                        var req = new XMLHttpRequest();
+                                        var payload = JSON.stringify({
+                                            url: document.location.href,
+                                            line: error.line,
+                                            stack: error.stack
+                                        });
+                                        var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                        req.open('POST', 'https://api.orderonline.id/log', true);
+                                        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                        req.send(params);
+                                    };
+                                }
+                                try {
+                                    if (typeof xEmbedScript != 'function') {
+                                        var xEmbedScript = function () {
+                                            !function(w, d, e, v, id, t, s) {
+                                                if (d.getElementById(id)) return;
+                                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                                s = d.getElementsByTagName(e)[0];
+                                                s.parentNode.insertBefore(t, s);
+                                            }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                        };
+                                    }
+                                    if (typeof xEmbedInit != 'function') {
+                                        var xEmbedInit = function (w, n) {
+                                            if (w.ooe) return;
+                                            n = w.ooe = function() {
+                                                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                            };
+                                            if (!w._ooe) w._ooe = n;
+                                            n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                        };
+                                    }
+                                    xEmbedInit(window);
+                                    ooe('setup', 'redirect', 'https://vita.orderonline.id');
+                                    ooe('init', '5f1a8627a9bf8058b0424f32', '6863ce2565b93e375d06732d', '6863ce2565b93e375d06732e', 'oo-embed-form-premium-makeup-bag-1253', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                    if (!window.jQuery) {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            t.addEventListener('load', xEmbedScript);
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                    } else {
+                                        xEmbedScript();
+                                    }
+                                } catch (e) {
+                                    xLogError(e);
+                                    throw e;
+                                }
+                            </script>
+                            <!-- End OrderOnline Embed Code -->
+                            
+                            <div class="mt-6 bg-blue-50 rounded-lg p-4">
+                                <h3 class="font-bold text-blue-800 mb-2">Garansi Kepuasan:</h3>
+                                <p class="text-blue-700">
+                                    <i class="fas fa-shield-alt text-blue-600 mr-2"></i> 
+                                    Kami menjamin 100% kepuasan Anda. Jika produk tidak sesuai deskripsi, 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold tracking-wider mb-2">PREMIUM MAKEUP BAG</div>
+                    <p class="text-blue-200">Tas Kosmetik Premium untuk Gaya Hidup Mewah</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-facebook text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-blue-400 mt-6 pt-6 text-center text-blue-200">
+                <p>&copy; FASHION AND STYLE 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Set the date we're counting down to (24 hours from now)
+        const countDownDate = new Date();
+        countDownDate.setDate(countDownDate.getDate() + 1);
+        
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+            
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result
+            document.getElementById("countdown-days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("countdown-hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("countdown-minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("countdown-seconds").innerHTML = seconds.toString().padStart(2, '0');
+            
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-days").innerHTML = "00";
+                document.getElementById("countdown-hours").innerHTML = "00";
+                document.getElementById("countdown-minutes").innerHTML = "00";
+                document.getElementById("countdown-seconds").innerHTML = "00";
+            }
+        }, 1000);
+        
+        // Color variant selection
+        const colorVariants = document.querySelectorAll('.color-variant');
+        colorVariants.forEach(variant => {
+            variant.addEventListener('click', function() {
+                colorVariants.forEach(v => v.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
